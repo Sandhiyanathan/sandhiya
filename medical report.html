@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>sandy project</title>
+
+</head>
+<h1><center>MEDICAL REPORT</center></h1>
+<marquee>
+<h3>
+"GOD GIVES LIFE...DOCTOR SAVES THE LIFE"</h3></marquee><marquee behavior="Time-new Roman" direction="right"></marquee>
+<body background="background.jpg.jpg" style="background-repeat:no-repeat;background-size: 100% 100%;"></body>
+
+<script>
+    
+    class grandparent
+{
+  data()
+    {
+    var name=prompt("Enter your Name");
+    document.write("Name is: "+name +"<br><br>");
+    var  age=prompt("Enter the age");
+    document.write("Age is: "+age +"<br><br>");
+    const date=prompt("Enter a date");
+    document.write("Date:"+date+"<br><br>");
+    }
+    BPlevelcheck()
+    {
+      var BP=prompt("Enter your BP level");
+      document.write("your BP level is: "+BP +"<br><br>");
+    
+      if(BP<=70&&BP>=90)
+      {
+        document.write("your BP level is low","<br><br>");
+        document.write("this level makes a sudden drop in blood pressure when standing from a sitting position","<br><br>");
+        document.write("It causes dehydrationand you have to take bed rest and take sime medicine","<br><br>");
+      }
+      else if(BP<=180&&BP>=140)
+      {
+        document.write("your BP level makes you as PRE-HYPERTENSION","<br><br>");
+        document.write("this level puts you at greater risk of serious health condition and it can cause strokes and heart attack","<br><br>");
+        document.write("you have to take some treatment and exercise regularly","<br><br>");
+      }
+      else if(BP<=140&&BP>=160)
+      {
+        document.write("your BP level as in HYPERTENSION","<br><br>");
+        document.write("this level causes lifestyle changes and some people cause stroke","<br><br>");
+        document.write("you must consult a doctor and can take ACE medicine as lisonophil with doctor prescription","<br><br>");
+      }
+      else if(BP>=180)
+      {
+        document.write("your BP level is HYPERTENCY","<br><br>");
+        document.write("you have chest pain and shortness of breath","<br><br>");
+        document.write("you can take medical treatment","<br><br>");
+      }
+      else 
+      {
+        document.write("your BP level is Normal"); 
+      }
+    }
+    sugar()
+    {
+      var sugar=prompt("Enter your sugar level");
+      document.write("sugar level is:" +sugar+ "<br><br>");
+      var b=prompt("1.Before fasting,2.After fasting");
+      switch(b)
+      {
+        case "1":
+          {
+            if(sugar>=80&&sugar<=100)
+            {
+              document.write("sugarlevel is normal","<br><br>");
+            }
+            else if(sugar>=100&&sugar<=125)
+            {
+              document.write("sugar level is in impaired glucose","<br>");
+              document.write("you are in prediabetic stage and you can take metaformin medicine with doctor consultant");
+
+            }
+            else if(sugar>=126)
+            {
+              document.write("you are in diabetic stage");
+              document.write("metaformin medicine is prescribed and immediately consult a doctor");
+
+            }
+            else{
+              document.write("Invalid","<br><br>");
+            }
+            
+          }break;
+          case "2":
+            {
+              if(sugar>=120 &&sugar<=140)
+              {
+                document.write("sugar lavel is normal");
+        
+              }
+              else if(sugar>=140&&sugar<=160)
+              {
+                document.write("sugar level is in impaired glucose");
+                document.write("you can do life style modification such as dietary restriction of sugar and take some food which help contolying blood sugar such as cold water fish and garlic");
+                            
+              }
+              else if(sugar>=200)
+              {
+                document.write("you are in diabetic stage");
+                document.write("you can meet a doctor and need to be treated immeditly with insulin","<br><br>");
+
+              }
+              else{
+                document.write("Invalid","<br><br>");
+              }
+            }
+            break;
+            default:
+              document.write("Not!","<br><br>");
+          
+          }
+        }
+    saltLevelCheck()
+     {
+          var saltLevel=prompt("Enter your salt level");
+          document.write("your salt level is:",saltLevel,"<br><br>")
+           {
+           if(saltLevel<=142&&saltLevel>=135)
+           {
+             document.write(" your Salt level is normal","<br><br>");
+           }
+      
+            else if(saltLevel>=142)
+            {
+              document.write(" your salt level is High","<br><br>");
+            }
+      
+            else
+            {
+               document.write(" your salt level is Low","<br><br>");
+            }
+          }
+        }
+            cholestrol()
+            {
+              var choles=prompt("Enter the cholestrol level");
+              document.write("your cholestrol level is:",choles,"<br><br>");
+            
+            if(choles>=240)
+            {
+              document.write("Your cholestrol level is Dangerous","<br><br>");
+              document.write("Your tablet is:please take statins and Atorovastatin(lipitor)","<br><br>");
+
+            }
+            else if(choles>=200&&choles<=239)
+            {
+              document.write("At-Risk","<br><br>");
+              document.write("Your tablet is:Take Choline,evening primrose,Ezetimibe,Fenofibric Acid....","<br><br>");
+            }
+            
+            else if(choles<200)
+            {
+              document.write("Your Heart is in healthy condition","<br><br>");
+
+            } 
+            else{
+              document.write("Invalid!","<br><br>");
+            }            
+        }  
+         hemoglobin()
+  {
+    var hemo=prompt("Enter your hemoglobin level");
+    document.write("HB level:",hemo,"<br><br>");
+    var u=prompt("3.Men ,4.Women");
+    switch(u)
+    {
+      case "3":
+        {
+        if (hemo>=13.6&&hemo<=16.6)
+        {
+          document.write("your hemiglobin level is normal");
+
+        }
+        else if(hemo>=16.6)
+        {
+          document.write("your hemoglobin level is high  ");
+          document.write("Take alglucerase injection and cyanoclobalamin(vitaminB12tablets");
+        }
+        else if(hemo<=13.2)
+        {
+          document.write("your hemoglobin level is low(Anemia)");
+          document.write("Take carbonyl iron,cyanocobalamin(VitaminB12","<br><br>");
+        }
+        else
+        {
+          document.write("invalid","<br><br>");
+
+        }
+    }
+      break;
+      case "4":
+        {
+        if(hemo>=12.0&&hemo<=16.0)
+        {
+          document.write("your hemoglobin level is normal","<br>");
+        
+        }
+        else if(hemo>=15)
+        {
+          document.write("your hemoglobin level is high","<br><br>");
+          document.write("Take Haematinitinics combination","<br><br>");
+        
+        }
+        else if(hemo<=11.6)
+        {
+          document.write("Your hemoglobin level is low","<br><br>");
+          document.write("Take Hydroxocobalamin","<br><br>");
+        }
+        else
+        {
+          document.write("Invalid","<br><br>");
+        }
+      }
+        break;
+        default:
+          
+            document.write("please consult a doctor ","<br><br>");
+          
+    }
+  }    
+}
+
+class parent extends grandparent
+  {
+    bmicalculator()
+            {
+              const weight=prompt("Enter Your Weight:");
+              const height=prompt("Enter Your Height:");
+                const bmi=weight/(height*height);   
+                document.write("Your BMI is:"+ bmi+"<br><br>");  
+                
+                if(bmi>=18.5&&bmi<=24.5)
+                {
+                  document.write("Your BMI value is normal"+"<br><br>");
+                  document.write("You will continue your normal diet plan"+"<br><br>");   
+                }
+                else if(bmi>=24.5&&bmi<=29.9)
+                {
+                  document.write("Your BMI value is High"+"<br><br>");
+                  document.write("you are overweight,you must reduce your calories","<br><br>");
+                  document.write("Your diet plan is Brown Rice. Rich in whole grains and fiber, brown rice is one of the favorite snacks of fitness inthusiasts. ... "+"<br><br>");
+                }
+                else
+                {
+                  document.write("Your BMI value is Low"+"<br><br>");
+                  document.write("Your diet plan is whole grains, dried fruit, potatoes, avocados, oily fish, eggs, and dairy products. "+"<br><br>");
+                }       
+              
+            }            
+          } 
+                                                  
+const s=new parent();
+s.data();
+s.BPlevelcheck();
+s.sugar();
+s.saltLevelCheck();
+s.cholestrol();
+s.hemoglobin();
+s.bmicalculator();
+</script>
+</html>
